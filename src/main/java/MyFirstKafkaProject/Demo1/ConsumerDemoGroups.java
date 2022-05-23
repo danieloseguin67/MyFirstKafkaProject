@@ -19,7 +19,7 @@ public class ConsumerDemoGroups {
         Logger logger = LoggerFactory.getLogger(ConsumerDemoGroups.class.getName());
 
         String boostrapServers = "127.0.0.1:9092";
-        String groupId = "my-fifth-application";
+        String groupId = "my-tenth-application";
         String topic = "first_topic";
 
         Properties properties = new Properties();

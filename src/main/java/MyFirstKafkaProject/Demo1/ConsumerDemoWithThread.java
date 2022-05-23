@@ -10,13 +10,14 @@ import org.omg.SendingContext.RunTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOError;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 import java.util.concurrent.CountDownLatch;
 
 import static java.lang.Runtime.getRuntime;
-import static org.omg.SendingContext.RunTime.*;
 
 public class ConsumerDemoWithThread {
 
@@ -26,7 +27,7 @@ public class ConsumerDemoWithThread {
     }
 
     private ConsumerDemoWithThread() {
-
+       // constructor of the class ConsumerDemoWithThread
     }
 
     private void run() {
@@ -34,7 +35,7 @@ public class ConsumerDemoWithThread {
         Logger logger = LoggerFactory.getLogger(ConsumerDemoWithThread.class.getName());
 
         String boostrapServers = "127.0.0.1:9092";
-        String groupId = "my-sixth-application";
+        String groupId = "my-eleventh-application";
         String topic = "first_topic";
 
         CountDownLatch latch = new CountDownLatch(1);
@@ -54,7 +55,7 @@ public class ConsumerDemoWithThread {
         myThread.start();
 
         // add a shutdown hook
-        getRuntime().addShutdownHook(new Thread( () -> {
+        Runtime.getRuntime().addShutdownHook(new Thread( () -> {
             logger.info("Caught shutdown hook");
             ((ConsumerRunnable) myConsumerRunnable).shutdown();
             try {
@@ -111,22 +112,34 @@ public class ConsumerDemoWithThread {
         @Override
         public void run() {
 
+            Integer counter = 0;
+
             // poll for new data
+            logger.info("run is invoked");
             try {
 
+               logger.info("before while loop");
                while (true) {
+                  logger.info("Before getting records");
                   ConsumerRecords<String, String> records =
                           consumer.poll(Duration.ofMillis(100)); //new in kafka 2.0.0.
-                  for (ConsumerRecord record : records) {
+                  logger.info("get consumer messages");
+                  for (ConsumerRecord<String,String> record : records) {
                       logger.info("Key:" + record.key() + ", Value: " + record.value());
                       logger.info("Partition: " + record.partition() + ", Offset: " + record.offset());
+                      counter++;
                   }
+                  logger.info("Number of messages received: " + Integer.toString(counter));
                }
             } catch (WakeupException e) {
                  logger.info("Received shutdown signal!");
+            } catch (IOError x) {
+                  x.printStackTrace();
             } finally {
+                 logger.info("Finally closing the consume");
                  consumer.close();
                  // tell our main code we're done with the consumer
+                 logger.info("let main code know we are done with the consumer");
                  latch.countDown();
             }
         }

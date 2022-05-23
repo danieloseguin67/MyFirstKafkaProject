@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d418cff-4e30-49ce-bbcd-782b666e13ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ConsumerDemoGroups.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ConsumerDemoWithThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ConsumerDemoGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ConsumerDemoGroups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ConsumerDemoWithThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ConsumerDemoWithThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +55,7 @@
       <recent name="MyFirstKafkaProject.Demo1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProducerDemoKeys">
+  <component name="RunManager" selected="Application.ConsumerDemoWithThread">
     <configuration name="ConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyFirstKafkaProject.Demo1.ConsumerDemo" />
       <module name="MyFirstKafkaProject" />
@@ -125,8 +124,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ConsumerDemoWithThread" />
-        <item itemvalue="Application.ProducerDemoKeys" />
         <item itemvalue="Application.ConsumerDemoGroups" />
+        <item itemvalue="Application.ProducerDemoKeys" />
         <item itemvalue="Application.ConsumerDemo" />
         <item itemvalue="Application.ProducerDemo" />
       </list>
