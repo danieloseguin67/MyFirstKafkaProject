@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d418cff-4e30-49ce-bbcd-782b666e13ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ConsumerDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ConsumerDemoGroups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ConsumerDemoWithThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ProducerDemoKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ProducerDemoKeys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pat" beforeDir="false" afterPath="$PROJECT_DIR$/pat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +70,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsumerDemoGroups" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyFirstKafkaProject.Demo1.ConsumerDemoGroups" />
+      <module name="MyFirstKafkaProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MyFirstKafkaProject.Demo1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerDemoWithThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyFirstKafkaProject.Demo1.ConsumerDemoWithThread" />
+      <module name="MyFirstKafkaProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MyFirstKafkaProject.Demo1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProducerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyFirstKafkaProject.Demo1.ProducerDemo" />
       <module name="MyFirstKafkaProject" />
@@ -96,24 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerDemoWithCallBack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyFirstKafkaProject.Demo1.ProducerDemoWithCallBack" />
-      <module name="MyFirstKafkaProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MyFirstKafkaProject.Demo1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConsumerDemoWithThread" />
         <item itemvalue="Application.ProducerDemoKeys" />
+        <item itemvalue="Application.ConsumerDemoGroups" />
         <item itemvalue="Application.ConsumerDemo" />
-        <item itemvalue="Application.ProducerDemoWithCallBack" />
         <item itemvalue="Application.ProducerDemo" />
       </list>
     </recent_temporary>
@@ -142,5 +156,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
