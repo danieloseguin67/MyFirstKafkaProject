@@ -127,7 +127,7 @@ public class ConsumerDemoWithThread {
                   for (ConsumerRecord<String,String> record : records) {
                       logger.info("Key:" + record.key() + ", Value: " + record.value());
                       logger.info("Partition: " + record.partition() + ", Offset: " + record.offset());
-                      counter++;
+                      counter += 1;
                   }
                   logger.info("Number of messages received: " + Integer.toString(counter));
                }
