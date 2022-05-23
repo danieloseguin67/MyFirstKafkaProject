@@ -30,23 +30,25 @@ public class ProducerDemoKeys {
             // create the producer
 
             String topic = "first_topic";
-            String value = "Hello world";
+            String value = "Hello world " + Integer.toString(i);
             String key = "id_" + Integer.toString(i);
 
             // create a producer record
-            ProducerRecord<String, String> record = new ProducerRecord<String, String>(topic, value);
+            logger.info("make producer record: " + topic + "," + value + "," + key);
+            ProducerRecord<String, String> record =
+                    new ProducerRecord<String, String>(topic, value);
 
             logger.info("Key: " + key);  // log the key
             // id_0 going to partition 1
             // id_1 going to partition 0
-            // id_2 going to partition 2
-            // id_3 going to partition 0
-            // id_4 going to partition 1
-            // id_5 going to partition 2
-            // id_6 going to partition 1
-            // id_7 going to partition 0
+            // id_2 going to partition 1
+            // id_3 going to partition 2
+            // id_4 going to partition 0
+            // id_5 going to partition 1
+            // id_6 going to partition 2
+            // id_7 going to partition 1
             // id_8 going to partition 2
-            // id_9 going to partition 0
+            // id_9 going to partition 1
 
             // send data - asynchronous
             producer.send(record, new Callback() {
