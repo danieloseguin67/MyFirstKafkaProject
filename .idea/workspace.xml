@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d418cff-4e30-49ce-bbcd-782b666e13ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ConsumerDemoAssignSeek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo2/TwitterProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ConsumerDemoWithThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyFirstKafkaProject/Demo1/ConsumerDemoWithThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,20 +55,7 @@
       <recent name="MyFirstKafkaProject.Demo1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConsumerDemoWithThread">
-    <configuration name="ConsumerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyFirstKafkaProject.Demo1.ConsumerDemo" />
-      <module name="MyFirstKafkaProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="MyFirstKafkaProject.Demo1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TwitterProducer">
     <configuration name="ConsumerDemoAssignSeek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyFirstKafkaProject.Demo1.ConsumerDemoAssignSeek" />
       <module name="MyFirstKafkaProject" />
@@ -121,13 +108,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TwitterProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyFirstKafkaProject.Demo2.TwitterProducer" />
+      <module name="MyFirstKafkaProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MyFirstKafkaProject.Demo2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TwitterProducer" />
         <item itemvalue="Application.ConsumerDemoWithThread" />
         <item itemvalue="Application.ConsumerDemoAssignSeek" />
         <item itemvalue="Application.ConsumerDemoGroups" />
         <item itemvalue="Application.ProducerDemoKeys" />
-        <item itemvalue="Application.ConsumerDemo" />
       </list>
     </recent_temporary>
   </component>
